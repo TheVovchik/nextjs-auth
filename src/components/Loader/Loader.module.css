@@ -1,0 +1,25 @@
+.custom-loader {
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  width: 150px;
+  height: 150px;
+}
+
+.custom-loader__box {
+  width: 150px;
+  height: 150px;
+  background-image: url('../../../public/Preloader.svg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  animation: load8 1.2s infinite linear;
+}
+
+@keyframes load8 {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
